@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <div class="contact-buttons">
                 <a href="tel:+79313427297">Позвонить</a>
                 <a href="https://t.me/machtbetty" target="_blank">Telegram</a>
-            </div>        
+            </div>
         </div>
 
         <div class="section">
@@ -101,12 +101,41 @@
             </ul>
         </div>
 
-        <div class="section">
-            <h2>От себя</h2>
-            <p>В моей работе мне особенно нравится решать интересные задачи и видеть, как результат помогает людям. Вне работы я люблю изучать новое в сфере технологий, немного увлекаюсь скалолазаньем, рисованием и обожаю пешие прогулки. Спасибо за внимание и наилучшие пожелания!</p>
+        <div class="section highlight-section">
+            <h2>Обо мне</h2>
+            <p>Предлагаю познакомиться поближе.
+                <br>
+                Жмите на кнопку, чтобы узнать случайные факты обо мне.
+            </p>
+            <div class="random-fact-container">
+                <button id="random-fact-button">Узнать</button>
+                <p id="random-fact-text"></p>
+            </div>
         </div>
 
     </div>
+
+    <script>
+        document.getElementById('random-fact-button').addEventListener('click', function () {
+            const facts = [
+                "Я обожаю скалолазание, особенно боулдеринг.",
+                "Моя любимая книга — «Автостопом по галактике» Дугласа Адамса, и я могу бесконечно цитировать «Ответ – это 42».",
+                "В свободное время я люблю рисовать маслом, пастелью или акрилом.",
+                "У меня есть очаровательная черная кошка по имени Фуфырка (и нет, ни один мой пароль не содержит ее кличку).",
+                "Я получила повышение менее чем за полгода.",
+                "Я люблю научно-популярную литературу.",
+                "Я с удовольствием смотрю видео про космос.",
+                "У меня Linux.",
+                "Когда идет дождь, я выхожу пить чай на балкон.",
+                "Каждый день я хожу на пробежку. Мне нравится быстро бегать.",
+                "Я могу разговаривать на немецком.",
+            ];
+
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('random-fact-text').textContent = randomFact;
+        });
+    </script>
+
 
 </body>
 
