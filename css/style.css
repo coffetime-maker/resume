@@ -64,6 +64,7 @@ a:active {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #1e526d;
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s, box-shadow 0.3s, width 0.3s;
@@ -141,4 +142,57 @@ a:active {
     .photo img {
         max-width: 150px;
     }
+}
+
+/* random */
+
+.highlight-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.highlight-section h2 {
+    color: #1e526d;
+    margin-bottom: 10px;
+}
+
+.highlight-section p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.random-fact-container {
+    text-align: center;
+}
+
+#random-fact-button {
+    padding: 10px 20px;
+    background-color: #1e526d;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#random-fact-button:hover {
+    background-color: #144257;
+}
+
+#random-fact-button:active {
+    background-color: #0b3144;
+}
+
+#random-fact-text {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e526d;
 }
