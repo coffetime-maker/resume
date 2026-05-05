@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Владислав Андреев · Специалист по работе с данными</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -16,10 +6,10 @@
         }
 
         body {
-            background-color: #f2f5f4;
+            background-color: #EFF2F5;
             font-family: 'Inter', sans-serif;
             line-height: 1.5;
-            color: #1d2f34;
+            color: #1E2C3A;
             padding: 2rem 1rem;
         }
 
@@ -28,15 +18,16 @@
             margin: 0 auto;
             background: white;
             border-radius: 32px;
-            box-shadow: 0 25px 45px -15px rgba(20, 50, 40, 0.2);
+            box-shadow: 0 25px 45px -15px rgba(0, 0, 0, 0.15);
             display: grid;
             grid-template-columns: 280px 1fr;
             overflow: hidden;
         }
 
+        /* SIDEBAR — тёмно-графитовый, строгий */
         .sidebar {
-            background-color: #1a2639;
-            color: #e0e7f0;
+            background-color: #2C3E4E;
+            color: #E6EDF2;
         }
 
         .profile-photo {
@@ -58,9 +49,9 @@
         .section-title {
             text-transform: uppercase;
             font-weight: 600;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             letter-spacing: 2px;
-            color: #9bb7d4;
+            color: #A3B8CC;
             margin-bottom: 1.2rem;
         }
 
@@ -69,30 +60,30 @@
             align-items: center;
             gap: 0.9rem;
             margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: #d0ddee;
+            font-size: 0.85rem;
+            color: #D3DEE8;
         }
         .contact-item i {
             width: 20px;
-            color: #84a3c4;
+            color: #8CA3B9;
             font-size: 1rem;
         }
         .contact-item a {
-            color: #d0ddee;
+            color: #D3DEE8;
             text-decoration: none;
-            border-bottom: 1px dotted #5475a0;
+            border-bottom: 1px dotted #5F7A96;
         }
 
         .lang-item {
             display: flex;
             justify-content: space-between;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-bottom: 0.9rem;
-            color: #d0ddee;
+            color: #D3DEE8;
         }
         .lang-level {
             text-align: right;
-            color: #aac0d9;
+            color: #B2C5D9;
         }
 
         .skill-tags {
@@ -101,12 +92,12 @@
             gap: 0.5rem;
         }
         .skill-tag {
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.05);
             padding: 0.3rem 1rem;
             border-radius: 40px;
-            font-size: 0.78rem;
-            border: 1px solid #3f5b7a;
-            color: #dee9f5;
+            font-size: 0.75rem;
+            border: 1px solid #4B6884;
+            color: #E0EAF3;
             font-weight: 500;
         }
 
@@ -117,20 +108,21 @@
         }
         .personal-tag {
             font-size: 0.85rem;
-            color: #d0e0f0;
-            border-bottom: 1px dotted #5475a0;
+            color: #D3E2F0;
+            border-bottom: 1px dotted #5F7A96;
             padding-bottom: 0.1rem;
         }
 
+        /* MAIN — светлая часть, холодный нейтральный */
         .main {
-            background: white;
+            background: #FFFFFF;
             padding: 2.5rem 2.8rem;
         }
 
         .name-title h1 {
             font-size: 3.2rem;
             font-weight: 700;
-            color: #1a2b3c;
+            color: #1F2F3E;
             letter-spacing: -1.5px;
             line-height: 1;
             margin-bottom: 0.4rem;
@@ -139,19 +131,19 @@
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
-            color: #4f6f8f;
+            color: #526E82;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         .subheadline i {
             margin-right: 5px;
-            color: #4f7db0;
+            color: #5F7A96;
         }
 
         .desired-position {
             margin: 2rem 0 2.5rem;
             padding-bottom: 1.5rem;
-            border-bottom: 2px solid #eaf1ee;
+            border-bottom: 1px solid #E4EBF0;
         }
         .position-row {
             display: flex;
@@ -163,38 +155,38 @@
         .position-title {
             font-weight: 700;
             font-size: 2rem;
-            color: #1f3a5f;
+            color: #2C3E4E;
         }
         .position-salary {
             font-weight: 600;
-            font-size: 1.6rem;
-            color: #1f3a5f;
+            font-size: 1.5rem;
+            color: #2C3E4E;
         }
         .job-details {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
             margin-top: 0.5rem;
-            color: #4f6f8f;
+            color: #526E82;
             font-weight: 500;
         }
         .job-details i {
             width: 22px;
-            color: #1f3a5f;
+            color: #5F7A96;
         }
 
         .section-main-title {
             font-weight: 700;
-            font-size: 1.3rem;
-            color: #1f3a5f;
+            font-size: 1.25rem;
+            color: #2C3E4E;
             margin: 2rem 0 1.2rem;
             display: flex;
             align-items: center;
             gap: 0.6rem;
         }
         .section-main-title i {
-            color: #1f3a5f;
-            font-size: 1.3rem;
+            color: #5F7A96;
+            font-size: 1.25rem;
             width: 28px;
         }
 
@@ -206,25 +198,25 @@
         }
         .exp-date {
             font-weight: 500;
-            color: #1f3a5f;
-            font-size: 0.9rem;
+            color: #5F7A96;
+            font-size: 0.85rem;
             line-height: 1.4;
             padding-top: 0.1rem;
         }
         .exp-company {
             font-weight: 700;
-            font-size: 1.15rem;
-            color: #1f3a5f;
+            font-size: 1.1rem;
+            color: #2C3E4E;
         }
         .exp-role {
             font-weight: 500;
-            color: #4f6f8f;
+            color: #526E82;
             margin: 0.2rem 0 0.6rem;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         .exp-desc {
-            font-size: 0.95rem;
-            color: #2e404f;
+            font-size: 0.9rem;
+            color: #2E404F;
             list-style: none;
         }
         .exp-desc li {
@@ -236,7 +228,7 @@
             content: "—";
             position: absolute;
             left: 0;
-            color: #7fa3c9;
+            color: #8BA3BC;
         }
 
         .edu-item {
@@ -244,41 +236,41 @@
             grid-template-columns: 100px 1fr;
             gap: 1rem;
             margin-bottom: 1rem;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         .edu-year {
             font-weight: 500;
-            color: #1f3a5f;
+            color: #5F7A96;
         }
         .institution {
             font-weight: 600;
-            color: #1a2b3c;
+            color: #2C3E4E;
         }
 
         .about-me {
-            border: 1px solid #dde7f0;
-            background: #f8fafd;
-            padding: 1.8rem 2rem;
+            border: 1px solid #E4EBF0;
+            background: #F9FBFD;
+            padding: 1.5rem 2rem;
             border-radius: 24px;
             margin: 1.5rem 0 2rem;
-            font-size: 0.95rem;
-            color: #1f3a5f;
+            font-size: 0.9rem;
+            color: #2C3E4E;
         }
 
         .footer-contacts {
             margin-top: 2rem;
             padding-top: 1.2rem;
-            border-top: 2px solid #eaf1ee;
-            color: #4f6f8f;
-            font-size: 0.95rem;
+            border-top: 1px solid #E4EBF0;
+            color: #526E82;
+            font-size: 0.9rem;
             display: flex;
             gap: 2.5rem;
             flex-wrap: wrap;
         }
         .footer-contacts a {
-            color: #1f3a5f;
+            color: #5F7A96;
             text-decoration: none;
-            border-bottom: 1px dotted #b9cde0;
+            border-bottom: 1px dotted #C5D4E2;
         }
 
         @media (max-width: 800px) {
@@ -289,159 +281,7 @@
             .exp-item { grid-template-columns: 1fr; gap: 0.3rem; }
             .name-title h1 { font-size: 2.5rem; }
             .position-title { font-size: 1.6rem; }
-            .position-salary { font-size: 1.4rem; }
+            .position-salary { font-size: 1.3rem; }
             .edu-item { grid-template-columns: 1fr; gap: 0.2rem; }
         }
     </style>
-</head>
-<body>
-<div class="resume">
-    <!-- sidebar -->
-    <div class="sidebar">
-        <div class="profile-photo">
-            <img src="img/ava_4.png" alt="Владислав Андреев">
-        </div>
-        <div class="sidebar-content">
-            <!-- контакты -->
-            <div>
-                <div class="section-title">Контакты</div>
-                <div class="contact-item"><i class="fas fa-mobile-alt"></i>+7 (993) 977-94-95</div>
-                <div class="contact-item"><i class="fab fa-telegram"></i><a href="https://t.me/Meromirs">@Meromirs</a></div>
-                <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:avs185@mail.ru">avs185@mail.ru</a></div>
-                <div class="contact-item"><i class="fas fa-location-dot"></i>Санкт-Петербург</div>
-                <div class="contact-item"><i class="fas fa-passport"></i>РФ</div>
-            </div>
-            <!-- языки -->
-            <div>
-                <div class="section-title">Языки</div>
-                <div class="lang-item"><span>Русский</span> <span class="lang-level">Родной</span></div>
-                <div class="lang-item"><span>Английский</span> <span class="lang-level">Чтение документации</span></div>
-            </div>
-            <!-- навыки -->
-            <div>
-                <div class="section-title">Навыки</div>
-                <div class="skill-tags">
-                    <span class="skill-tag">1С: Производство / ERP</span>
-                    <span class="skill-tag">Excel / Google Sheets</span>
-                    <span class="skill-tag">Работа с документацией</span>
-                    <span class="skill-tag">Анализ данных / отчётность</span>
-                </div>
-            </div>
-            <!-- личные качества -->
-            <div>
-                <div class="section-title">Личные качества</div>
-                <div class="personal-tags">
-                    <span class="personal-tag">Системное мышление</span>
-                    <span class="personal-tag">Техническая грамотность</span>
-                    <span class="personal-tag">Усидчивость</span>
-                    <span class="personal-tag">Следование регламентам</span>
-                </div>
-            </div>
-            <!-- хобби -->
-            <div>
-                <div class="section-title">Хобби</div>
-                <div class="personal-tags">
-                    <!-- Иконка исправлена на книгу/свиток (fa-book-open) — подходит для истории -->
-                    <span class="personal-tag"><i class="fas fa-book-open"></i> история</span>
-                    <span class="personal-tag"><i class="fas fa-mountain"></i> пешие походы</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- main -->
-    <div class="main">
-        <div class="name-title">
-            <h1>Владислав Андреев</h1>
-            <div class="subheadline">
-                <span><i class="fas fa-mars"></i>30 лет (15.12.1995)</span>
-                <span><i class="fas fa-clock"></i>на связи: 09:00–21:00 МСК</span>
-            </div>
-        </div>
-
-        <!-- заголовок -->
-        <div class="desired-position">
-            <div class="position-row">
-                <span class="position-title">Специалист по работе с данными</span>
-                <span class="position-salary">от 70 000 ₽</span>
-            </div>
-            <div style="font-size:1rem; color:#4f6f8f; margin: 0.2rem 0 0.8rem;">промышленность · IT · учётные системы</div>
-            <div class="job-details">
-                <span><i class="fas fa-calendar-week"></i> полный день / сменный график</span>
-                <span><i class="fas fa-laptop-house"></i> офис / производство</span>
-                <span><i class="fas fa-gear"></i> работа с оборудованием и документацией</span>
-            </div>
-        </div>
-
-        <!-- опыт работы -->
-        <div class="section-main-title"><i class="fas fa-briefcase"></i>Опыт работы</div>
-
-        <div class="exp-item">
-            <div class="exp-date">июнь 2025 — апрель 2026<br>Проект 12 мес.</div>
-            <div>
-                <div class="exp-company">АО АВЭКС (Авиационная электроника и коммуникационные системы)</div>
-                <div class="exp-role">Оператор 1С</div>
-                <ul class="exp-desc">
-                    <li>Перевод бумажной номенклатуры в ERP: обработано <strong>более 15 000 позиций</strong>, как результат сокращено время поиска документации.</li>
-                    <li>Объединение разрозненных номенклатурных справочников в единую базу: устранено <strong>более 20 000 дублей</strong>.</li>
-                    <li>Подготовка квартальной отчётности по закупкам.</li>
-                    <li>Внесение данных в УПП, создание отчётов по остаткам и местонахождению материалов.</li>
-                    <li>Приведение данных к единому стандарту для прозрачности учёта.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-date">февраль 2022 — июнь 2025<br>3 года 5 мес.</div>
-            <div>
-                <div class="exp-company">Attento (электронная коммерция)</div>
-                <div class="exp-role">Администратор сайта (CS-Cart / 1С)</div>
-                <ul class="exp-desc">
-                    <li>Обеспечение бесперебойной работы товарного каталога: загрузка, актуализация, классификация.</li>
-                    <li>Участие в настройке обмена данными между 1С и витриной, поиск и устранение расхождений.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-date">июнь 2021 — февраль 2022<br>9 мес.</div>
-            <div>
-                <div class="exp-company">Denero (веб-студия)</div>
-                <div class="exp-role">Тестировщик</div>
-                <ul class="exp-desc">
-                    <li>Функциональное тестирование сайтов, составление баг-репортов, контроль качества вёрстки.</li>
-                    <li>Разработка лендингов под разные устройства, обеспечение корректного отображения.</li>
-                    <li>Взаимодействие с разработчиками для улучшения пользовательских сценариев.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- образование -->
-        <div class="section-main-title"><i class="fas fa-graduation-cap"></i>Образование</div>
-        
-        <div class="edu-item">
-            <span class="edu-year">В процессе (по 2027)</span>
-            <span><span class="institution">Санкт-Петербургский технологический колледж</span> — Информационные системы и программирование (техник-программист)</span>
-        </div>
-
-        <!-- профессиональный профиль -->
-        <div class="section-main-title"><i class="fas fa-bullseye"></i>Профессиональный профиль</div>
-        <div class="about-me">
-            <p><strong>Сильные стороны:</strong> системное мышление, технический склад ума, довожу задачи до результата.</p>
-            <p>Умею работать с учётными системами (1С, ERP) и большими массивами данных. Быстро осваиваю новое ПО. Ценю чёткие регламенты и порядок.</p>
-            <br>
-            <p><b>Цель — стать востребованным специалистом в области работы с данными или информационной безопасности.</b></p>
-            <p style="font-size:0.85rem; color:#4f6f8f; margin-top:0.8rem;">Самостоятельно изучаю основы информационной безопасности (Linux, сетевые технологии, системы обнаружения вторжений).</p>
-        </div>
-
-        <!-- контакты внизу -->
-        <div class="footer-contacts">
-            <span><i class="fab fa-telegram"></i> Telegram: <a href="https://t.me/Meromirs">@Meromirs</a></span>
-            <span><i class="fas fa-mobile-alt"></i> +7 (993) 977-94-95</span>
-            <span><i class="fas fa-envelope"></i> <a href="mailto:avs185@mail.ru">avs185@mail.ru</a></span>
-        </div>
-        <div style="color:#7f9f93; font-size:0.8rem; text-align:right; margin-top:0.8rem;">2026 · Специалист по работе с данными</div>
-    </div>
-</div>
-</body>
-</html>
